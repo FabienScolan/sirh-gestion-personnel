@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class EditerCollaborateurController extends HttpServlet {
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// recupere la valeur d'un parametre dont le nom est departement
 		String matriculeParam = req.getParameter("matricule");
 		String titreParam = req.getParameter("titre");
