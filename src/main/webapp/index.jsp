@@ -1,6 +1,7 @@
 <html>
 <body>
-<h2>Hello World!</h2>
-<h1>Testing Tomcat</h1>
+<h2>Gestion personnal</h2>
+<a href="<%=request.getContextPath() %>/collaborateurs/lister">Lister collaborateurs</a><p>
+<a href="<%=request.getContextPath() %>/views/collab/creerCollaborateurs.jsp">Nouveau collaborateur</a>
 </body>
 </html>

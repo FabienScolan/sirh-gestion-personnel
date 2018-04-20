@@ -1,3 +1,4 @@
+<%@page import="dev.sgp.entite.Collaborateur"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@page import="java.util.List"%>
@@ -5,6 +6,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/bootstrap-3.3.7-
+dist/css/bootstrap.css">
 <title>SGP - App</title>
 </head>
 <body>
@@ -12,10 +15,10 @@
 	<h2>La liste</h2>
 	<ul>
 		<%
-			List<String> listeNoms = (List<String>) request.getAttribute("listeNoms");
-			for (String nom : listeNoms) {
+			List<Collaborateur> listeNoms = (List<Collaborateur>) request.getAttribute("listeCollabs");
+			for (Collaborateur collab : listeNoms) {
 		%>
-		<li><%=nom%></li>
+		<li><%=collab.getNom()%></li>
 		<%
 			}
 		%>
