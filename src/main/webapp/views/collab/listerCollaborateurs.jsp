@@ -36,7 +36,7 @@ dist/css/bootstrap.css">
 	        </div>
 	        <div class="w-100"></div>
 	        <div align="right" class="mr-2">
-	          <a href="<%=request.getContextPath()%>/views/collab/editCollaborateur.jsp" class="btn btn-primary">Éditer</a>
+	          <a href="<%=request.getContextPath()%>/views/collab/editerCollaborateur.jsp?matricule=<%=collab.getMatricule() %>" class="btn btn-primary">Éditer</a>
 	        </div>   
 	      
 	        <%
